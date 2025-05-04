@@ -3,10 +3,10 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useCallback, useEffect, useContext } from 'react'
 import { fetchAllCountries, fetchByName, fetchByRegion } from './services/api'
 import { AppContext } from './context/AppContext'
-import Home from './Pages/Home'
+import Home from './pages/Home'
 import DetailsPage from './pages/DetailsPage'
 import Header from './components/Header'
-import FavoritesPage from './Pages/FavoritesPage'
+import FavoritesPage from './pages/FavoritesPage'
 
 function App() {
   const [countries, setCountries] = useState([]);
